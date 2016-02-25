@@ -1,0 +1,277 @@
+@CHARSET "UTF-8";
+*{
+	margin: 0px;padding: 0px;
+}
+body{
+	background-color: white;
+}
+.page-design{
+	position: relative;
+}
+.design-tool{
+	width: 100%;
+	font-size: 12px;
+	border-bottom: 1px solid #DDDDDD;
+	position: relative;
+	padding-bottom: 10px;
+}
+.btn.choose{
+	background-color: #FFED94;
+}
+.design-tool .nav{
+	background-color: #F9FAFC;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+.design-tool .tab-content{
+	padding-left: 10px;
+	padding-right: 10px;
+	/* padding-bottom: 10px; */
+	/*border-bottom: 1px solid #DDDDDD; */
+}
+
+.design-tool .tab-content .tab-pane{
+	width: 100%;
+	padding-top: 10px;
+}
+
+.design-tool .tab-content .tab-pane:after{
+	content: "&nbsp;";
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	display:block;
+}
+.design-tool .tab-content .btn{
+	border-radius: 0px !important;
+    cursor: pointer;
+}
+
+
+.design-tool .nav>li{
+	border-right: 1px solid #DDDDDD;
+}
+.design-tool .nav>li>a{
+	padding:5px 7px;
+	color: #525252;
+	border: 0px !important;
+	border-radius: 0px !important;
+	margin: 0px !important;
+}
+.design-tool .nav>li>a{
+	border-radius: 0px;
+}
+.edit .design-container{
+	border: 1px solid #DDDDDD;
+	margin: 10px;
+	border-radius: 5px;
+	position: relative;
+	padding: 30px 15px 15px;
+}
+.edit .design-content:before {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "内容";
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 5px 7px;
+    position: absolute;
+    top: -1px;
+}
+.edit .select{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 13px rgb(255, 188, 0);
+    -moz-box-shadow: inset 0 1px 13px rgb(255, 188, 0);
+    box-shadow: inset 0 1px 13px rgb(255, 188, 0);
+}
+.page-design{
+	margin-left: -15px;
+	margin-right: -15px;
+    position: relative;
+}
+.design-container .ui-sortable-helper{
+	width: 200px !important;height: 50px !important;overflow: hidden;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 13px rgb(255, 188, 0);
+    -moz-box-shadow: inset 0 1px 13px rgb(255, 188, 0);
+    box-shadow: inset 0 1px 13px rgb(255, 188, 0);
+}
+.edit .ui-sortable-placeholder{
+	width: 200px;height: 50px;overflow: hidden;
+}
+.design-tool .ui-draggable-dragging{
+	/* width: 50px; */
+}
+.design-tool .ui-draggable-dragging .info{
+	/* display: none; */
+}
+.ui-sortable-placeholder { outline: 1px dashed #ddd;visibility: visible!Important; border-radius: 4px;}
+
+.design-container .page-model{
+	
+}
+.design-container .info{
+	display: none;
+}
+.design-container .view{
+	display: block;
+}
+.edit .design-container .column{
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    margin: 5px 0;
+	padding: 30px 15px 15px;
+}
+.show .view{
+	padding: 0px;margin: 0px;
+}
+.show .page-model-control-btn-group{
+	display: none;
+}
+.show [containereditable="true"]{
+	padding: 0px;
+}
+.edit .view {
+    /* background-color: #F5F5F5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    position: relative;
+	padding: 30px 15px 15px;
+}
+.edit .view:before {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "组件";
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    line-height: 2;
+    padding: 0px 5px;
+    position: absolute;
+    top: -1px;
+	clear: both;
+	display:block;
+}
+.edit .column:before{
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "容器";
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    line-height: 2;
+    padding: 0px 5px;
+    position: absolute;
+    top: -1px;
+}
+
+.view{
+	position: relative;
+}
+.page-model .info{
+	display: none;
+}
+/* 页面模型 */
+.design-tool .page-model{
+    line-height: 25px;
+    width: 200px;float: left;margin-right: 10px;margin-bottom: 10px;
+}
+/* .ui-draggable-dragging .info{
+	display: none!important;
+}
+.ui-draggable-dragging .view{
+	display: block!important;
+} */
+.page-model{
+	position: relative;
+}
+.design-tool .page-model .info{
+    height: 25px;
+    display: block;
+    background-color: gainsboro;
+}
+
+.page-model .info input{
+    width: 60px;
+    padding: 0 10px;
+    background: #bbb;
+    font-size: 10px;
+    color: white;
+    line-height: 24px;
+    height: 24px;
+    position: relative;
+    top: -1px;
+    border: 0px;
+    margin-top: 1px;
+    float: left;
+    margin-right: 10px;
+}
+.page-model .info .name{
+    float: left;
+    overflow: hidden;
+    height: 25px;
+    font-size: 11px;
+	overflow: hidden;
+    margin-right: 10px;
+}
+.page-model .info .description{
+	float: left;
+    height: 25px;
+	overflow: hidden;
+}
+.design-tool .page-model .view{
+	display: none;
+}
+/* 页面模型按钮 */
+.page-model-control-btn-group{
+	position: absolute;right: 0px;top: 0px;z-index: 1;line-height: 25px;
+}
+.design-container .page-model-control-btn-group{
+	left: 35px;
+}
+
+.design-tool .page-model-control-btn-group .btn{
+	display: none;
+}
+.design-tool .page-model-control-btn-group .drag{
+	display: block;
+}
+.full .design-container .page-model{
+	display: none !important;
+}
+.full .design-container .need-full{
+	display: block !important;
+}
+.page-model-control-btn-group .btn{
+    background-color: #999999 !important;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.page-model-control-btn-group .btn .fa{
+    color: black;
+}
+/* 页面模型按钮 */
+.page-model-setup-btn-group{
+	
+}

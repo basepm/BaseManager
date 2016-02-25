@@ -1,0 +1,189 @@
+/* Insert Your Custom CSS Here */
+html_{
+	background-image: url("../../images/sys/htmlbg0.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	min-height: 100%;
+	/* animation: htmlBackgroudImg 30s infinite;
+	-moz-animation: htmlBackgroudImg 30s infinite;	Firefox
+	-webkit-animation: htmlBackgroudImg 30s infinite;	Safari 和 Chrome
+	-o-animation: htmlBackgroudImg 30s infinite;	Opera */
+}
+@keyframes htmlBackgroudImg
+{
+0%{background-image: url("../../images/sys/htmlbg0.jpg");}
+10%{background-image: url("../../images/sys/htmlbg1.jpg");}
+20%{background-image: url("../../images/sys/htmlbg2.jpg");}
+30%{background-image: url("../../images/sys/htmlbg3.jpg");}
+40%{background-image: url("../../images/sys/htmlbg4.jpg");}
+50%{background-image: url("../../images/sys/htmlbg5.jpg");}
+60%{background-image: url("../../images/sys/htmlbg6.jpg");}
+70%{background-image: url("../../images/sys/htmlbg7.jpg");}
+80%{background-image: url("../../images/sys/htmlbg8.jpg");}
+90%{background-image: url("../../images/sys/htmlbg9.jpg");}
+100%{background-image: url("../../images/sys/htmlbg9.jpg");}
+}
+
+@-moz-keyframes htmlBackgroudImg /* Firefox */
+{
+0%{background-image: url("../../images/sys/htmlbg0.jpg");}
+10%{background-image: url("../../images/sys/htmlbg1.jpg");}
+20%{background-image: url("../../images/sys/htmlbg2.jpg");}
+30%{background-image: url("../../images/sys/htmlbg3.jpg");}
+40%{background-image: url("../../images/sys/htmlbg4.jpg");}
+50%{background-image: url("../../images/sys/htmlbg5.jpg");}
+60%{background-image: url("../../images/sys/htmlbg6.jpg");}
+70%{background-image: url("../../images/sys/htmlbg7.jpg");}
+80%{background-image: url("../../images/sys/htmlbg8.jpg");}
+90%{background-image: url("../../images/sys/htmlbg9.jpg");}
+100%{background-image: url("../../images/sys/htmlbg9.jpg");}
+}
+
+@-webkit-keyframes htmlBackgroudImg /* Safari 和 Chrome */
+{
+0%{background-image: url("../../images/sys/htmlbg0.jpg");}
+10%{background-image: url("../../images/sys/htmlbg1.jpg");}
+20%{background-image: url("../../images/sys/htmlbg2.jpg");}
+30%{background-image: url("../../images/sys/htmlbg3.jpg");}
+40%{background-image: url("../../images/sys/htmlbg4.jpg");}
+50%{background-image: url("../../images/sys/htmlbg5.jpg");}
+60%{background-image: url("../../images/sys/htmlbg6.jpg");}
+70%{background-image: url("../../images/sys/htmlbg7.jpg");}
+80%{background-image: url("../../images/sys/htmlbg8.jpg");}
+90%{background-image: url("../../images/sys/htmlbg9.jpg");}
+100%{background-image: url("../../images/sys/htmlbg9.jpg");}
+}
+
+@-o-keyframes htmlBackgroudImg /* Opera */
+{
+0%{background-image: url("../../images/sys/htmlbg0.jpg");}
+10%{background-image: url("../../images/sys/htmlbg1.jpg");}
+20%{background-image: url("../../images/sys/htmlbg2.jpg");}
+30%{background-image: url("../../images/sys/htmlbg3.jpg");}
+40%{background-image: url("../../images/sys/htmlbg4.jpg");}
+50%{background-image: url("../../images/sys/htmlbg5.jpg");}
+60%{background-image: url("../../images/sys/htmlbg6.jpg");}
+70%{background-image: url("../../images/sys/htmlbg7.jpg");}
+80%{background-image: url("../../images/sys/htmlbg8.jpg");}
+90%{background-image: url("../../images/sys/htmlbg9.jpg");}
+100%{background-image: url("../../images/sys/htmlbg9.jpg");}
+}
+
+/* 顶部背景 */
+.sys-header{
+	/* background-color: rgba(0, 0, 0, 0.3); */
+}
+.vd_navbar-left{
+	/* background-color: rgba(0, 0, 0, 0.3); */
+}
+.vd_navbar-right{
+	/* background-color: rgba(0, 0, 0, 0.3); */
+}
+.sys-header.z-index-0{
+	z-index: 0 !important;
+}
+
+body{
+	
+  background-color: #f0f0f0;
+  color: #5e656b;
+}
+.vd_title-section{
+	
+}
+.vd_title-section h1{
+	font-size: 25px;
+}
+.boxed-layout .sys-header .vd_top-menu-wrapper {
+  background-color: #242729;
+  -webkit-box-shadow: 0 -2px 4px rgba(50,50,50,0.75);
+  box-shadow: 0 -2px 4px rgba(50,50,50,0.75);
+}
+
+.navbar-tabs-menu {
+  background-color: #393d41;
+}
+.sys-header .vd_top-menu-wrapper {
+  background-color: #242729;
+}
+
+.vd_navbar {
+  background-color: #393D41;
+  color: #ffffff;
+}
+.vd_navbar .vd_menu a{
+}
+.vd_navbar .vd_menu ul li .child-menu{
+}
+#footer .vd_bottom{
+	background-color: rgba(0, 0, 0, 0);
+	color: #909090;
+}
+.over-window{
+	position: fixed;
+	z-index: 9999;
+	left: 0px;right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.sidebar-nav {
+	position: fixed;
+	width: 230px;
+	background: #FFFFFF;
+	z-index: 10;
+	border: 1px solid rgb(161, 216, 91);
+	padding-bottom: 20px;
+}
+.sidebar-nav{
+	width: 500px;
+	right: 50px;
+	top: 500px;
+}
+.sidebar-form-nav{
+	width: 400px;
+	left: 50px;
+	top: 500px;
+}
+.sidebar-nav .title{
+	width: 100%;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(161, 216, 91);
+	color: white;
+	cursor: move;
+	margin-bottom: 10px;
+}
+.sidebar-nav .nav-header{
+	cursor: pointer;
+	font-size: 13px;
+	color: rgb(99, 155, 54);
+	text-shadow: -1px 1px 1px rgba(161, 216, 91, 0.29);
+}
+.form-control{
+	background: none;
+	
+}
+input.form-control {
+/*很关键：将默认的样式清除*/
+appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;
+}
+select.form-control {
+/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+/*很关键：将默认的select选择框样式清除*/
+appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;
+/*在选择框的最右侧中间显示小箭头图片*/
+background: url("../img/arrow.png") no-repeat scroll right center transparent;
+/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+padding-right: 14px;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }

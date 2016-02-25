@@ -1,0 +1,311 @@
+
+.base_sort_both{
+	background: url("../../images/orderby/sort_both.png") no-repeat center right;
+    cursor: pointer;
+}
+.base_sort_asc{
+	background: url("../../images/orderby/sort_asc.png") no-repeat center right;
+    cursor: pointer;
+}
+.base_sort_desc{
+	background: url("../../images/orderby/sort_desc.png") no-repeat center right;
+    cursor: pointer;
+}
+#system_main{
+	margin-top: 10px;
+}
+.mask{
+	z-index: 10;
+	position: fixed;
+	left: 0px;right: 0px;bottom: 0px;top: 0px;background-color: rgba(0, 0, 0, 0.27);
+}
+.full-div{
+	position: absolute;
+	left: 0px;right: 0px;bottom: 0px;top: 0px;background-color: white;
+}
+.page-window .page-mask{
+	z-index: 10;
+	position: fixed;
+	left: 0px;right: 0px;bottom: 0px;top: 0px;background-color: rgba(0, 0, 0, 0.27);
+}
+.page-window .page-content{
+	z-index: 11;position: fixed;left: 12%;right: 12%;bottom: 100px;top: 100px;
+	background-color: white;border: 1px solid #C77F17;overflow: hidden;
+}
+.page-window .page-content .page-body{
+	overflow: auto;
+	position: absolute;
+	left: 0px;
+    right: 0px;
+    top: 35px;
+    bottom: 50px;
+	padding: 5px;
+}
+.page-window .page-content .form .formcontent{
+    padding-bottom: 40px;
+}
+.page-window .page-content .form .btn-div{
+	position: fixed;
+    z-index: 999;
+    left: 12%;
+    right: 12%;
+    bottom: 121px;
+    background: rgb(255, 255, 255);
+    padding: 0px;
+    overflow: hidden;
+    width: auto;
+    padding-left: 17px;
+    margin-left: 1px;
+    margin-right: 1px;
+   /*  border-top: 1px solid #1FAE66; */
+}
+/* 遮罩 */
+#system_mask{
+	position: fixed;
+	z-index: 999999;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	background-color: rgb(238, 230, 230);
+	background-color: rgba(0, 0, 0, 0.27);
+}
+
+.fa-spin {
+	font-size: 41px;line-height: 40px;width: 40px;height: 40px;text-align: center;padding: 0px;
+    position: fixed;
+    left: 48%;
+    top: 47%;
+}
+.fa-spin div{
+	font-size: 35px;line-height: 40px;width: 40px;height: 40px;text-align: center;padding: 0px;margin: 0px;
+}
+.alert-message{
+	position: fixed;
+    z-index: 99;
+    top: 0px;
+    width: 100%;
+}
+/* 
+.form-horizontal {
+	
+}
+
+.form-horizontal .form-group {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.list-group {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.row>div {
+	margin: 10px 0px 10px 0px;
+}
+
+ */
+
+.sys_tree_list ,.sys_tree{
+	min-height: 20px;
+	/* padding: 19px; */
+	margin-bottom: 20px;
+	/* background-color: #fbfbfb; */
+	/*border: 1px solid #999; */
+}
+.sys_tree_list > ul,.sys_tree > ul{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+
+.sys_tree_list li,.sys_tree li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+	position: relative;
+	padding-right: 0px;
+	padding-top: 5px;
+}
+
+.sys_tree_list li::before,.sys_tree_list li::after,.sys_tree li::before,.sys_tree li::after {
+	content: '';
+	left: -20px;
+	position: absolute;
+	right: auto;
+}
+
+.sys_tree_list li::before,.sys_tree li::before {
+	border-left: 1px dashed #999;
+	bottom: 50px;
+	height: 100%;
+	top: 0;
+	width: 1px;
+}
+
+.sys_tree_list li::after,.sys_tree li::after {
+	border-top: 1px dashed #999;
+	height: 20px;
+	top: 15px;
+	width: 20px;
+}
+
+.sys_tree_list li span,.sys_tree li span  {
+	border: 1px dotted #999;
+	display: inline-block;
+	padding: 1px 8px;
+	text-decoration: none;
+	width: 100%;
+	font-size: 12px;
+}
+
+.sys_tree_list li.parent_li>span,.sys_tree li.parent_li>span {
+	cursor: pointer;
+}
+
+.sys_tree_list>ul>li::before,.sys_tree_list>ul>li::after,.sys_tree>ul>li::before,.sys_tree>ul>li::after {
+	border: 0;
+}
+
+.sys_tree_list li:last-child::before ,.sys_tree li:last-child::before{
+	height: 15px;
+}
+
+.sys_tree_list li.parent_li>span:hover,.sys_tree_list li.parent_li>span:hover+ul li span, .sys_tree li.parent_li>span:hover,.sys_tree li.parent_li>span:hover+ul li span {
+	background: #eee;
+	border: 1px solid #94a0b4;
+	color: #000;
+}
+.tree_btn{
+	float: right;
+}
+.sys_tree_list span i,.sys_tree span i{
+	margin-right: 10px;
+}
+
+
+.uploadFileMask{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgb(202, 202, 202);
+	z-index: 99999;
+	display: none;
+}
+.uploadFileMaskContent{
+	width: 90%;
+	margin-top: 100px;
+	margin-left: 5%;
+	height: 100px;
+	background-color: white;
+}
+.uploadFileMaskContentTitle{
+	width: 90%;
+	margin-left: 5%;
+	font-size: 15px;
+	font-weight: 900;
+	color: rgb(255, 143, 0);
+	padding-top: 20px;
+}
+
+.uploadFileSpeedProgress{
+	width: 90%;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-left: 5%;
+	background-color: rgb(243, 243, 243);
+}
+.uploadFileSpeedProgressShow{
+	
+	width: 50%;
+	background-color: red;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #428bca;
+	
+}
+
+
+.dropdown-menu > li > a {
+  color: white;
+  background-color: inherit;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dropdown-menu{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: inherit;
+	border-color: #428bca;
+}
+
+.fa{
+	line-height: inherit !important;
+}
+.chat-to-user .badge.user-chat-count{
+	min-width: 15px;
+	padding-left: 2px;
+	padding-right: 2px;
+	text-align: center;
+	height: 15px;
+	line-height: 15px;
+}
+
+.baseSelect label{
+	margin-bottom: 0px !important;
+	padding-left: 25px !important;
+}
+.baseSelect label:before{
+	top: 1px !important;
+}
+.baseSelect label:after{
+	top: 1px !important;
+}
+
+.image-group{
+	
+}
+
+.image-group .one-image{
+	float: left;
+}
+.image-group .one-image .remove{
+    position: absolute;
+    font-size: 16px;
+    margin-left: 104px;
+    margin-top: -12px;
+}
+.colorpicker{
+	z-index: 9999;
+}
+
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-on, .bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-off, .bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-label {
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+.bootstrap-switch-mini .bootstrap-switch-label {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 5px;
+}
+.panel {
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .0) !important;
+  box-shadow: 0 0 0 rgba(0, 0, 0, .0) !important;
+}

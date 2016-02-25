@@ -1,0 +1,2 @@
+<%@ page trimDirectiveWhitespaces="true" %><%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%><%@ page import="java.util.*"%><%@ include file="/WEB-INF/view/control/common/base.jsp"%>
+<jsp:include page="${id }" flush="false" />

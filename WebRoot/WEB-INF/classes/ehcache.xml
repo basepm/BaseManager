@@ -1,0 +1,12 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd">
+	<!-- hibenate缓存//spring 3 基于注解ehcache缓存配置;@Cacheable(cacheName="departCache") -->
+	<defaultCache maxElementsInMemory="1000" eternal="false"
+		timeToIdleSeconds="36000" timeToLiveSeconds="36000" overflowToDisk="false"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="1200"
+		memoryStoreEvictionPolicy="LRU">
+	</defaultCache>
+	<cache name="org.hibernate.cache.StandardQueryCache"
+		maxElementsInMemory="10000" timeToIdleSeconds="3000">
+	</cache>
+</ehcache>
